@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../statics/css/Filtros.css">
+        <link rel="stylesheet" href="../statics/css/cart.css">
+        <link rel="icon" href="../statics/img/ICONO1.jpg" type="image/png" />
+        <title>Mi tierra - Carrito</title>
+    </head>
+
+    <body class="bodyL" id="body">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- The social media icon bar -->
+        <div class="icon-bar">
+            <a href="https://es-la.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="https://google.com" class="google"><i class="fa fa-google"></i></a>
+            <a href="https://instagram.com" class="instagram"><i class="fa fa-instagram"></i></a>
+            <a href="https://youtube.com" class="youtube"><i class="fa fa-youtube"></i></a>
+        </div>
+        <header>
+            <div class="container-fluid Heady">
+                <h1>CAMPESINOS DE CORAZÓN</h1>
+                <nav id="menu">
+                    <ul class="mainmenu">
+                        <li><a class="menu" href="started.html">INICIO</a></li>
+                        <li>|</li>
+                        <li><a class="menu" href="product_cart.html">PRODUCTOS Y OTROS</a></li>
+                        <li>|</li>
+                        <li><a class="menu" href="contact.html">CONTACTO</a></li>
+                        <li>|</li>
+                        <li><a class="menu" href="register.html">REGISTRATE</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- INICIO SECCION TIENDA -->
+        <div class="container containerL" id="Container">
+            <div class="main row Blanco" id="Blanco">
+                <section class="author-archive col-md-12">
+                    <div class="Contenido1"><br>
+                        <h1 class="Title-Prod">PRODUCTOS Y OTROS </h1>
+                        <input type="radio" id="All" name="categories" value="All" checked>
+                        <input type="radio" id="Comida" name="categories" value="Comida">
+                        <input type="radio" id="Bebidas" name="categories" value="Bebidas">
+                        <input type="radio" id="Postres" name="categories" value="Postres">
+                        <input type="radio" id="Otros" name="categories" value="Otros">
+
+                        <ol class="filters">
+                            <li>
+                                <label for="All">Todo</label>
+                            </li>
+                            <li>
+                                <label for="Comida">Comida</label>
+                            </li>
+                            <li>
+                                <label for="Bebidas">Bebidas</label>
+                            </li>
+                            <li>
+                                <label for="Postres">Postres</label>
+                            </li>
+                            <li>
+                                <label for="Otros">Otros</label>
+                            </li>
+                        </ol>
+
+                        <ol class="posts">
+                            <!--Comida-->
+                            <li class="post" data-category="Comida">
+
+                                <div class="item">
+                                    <img class="item-image" src="../statics/img/COMIDA1.jpg" alt=""
+                                        style="height: 200px; width: 240px;"><br>
+                                    <h2 class="item-title">
+                                        <p class="Subtitilo">Almojabana</p>
+                                    </h2>
+                                    <h2>
+                                        <p class="Descripcion">Paquete de almojabanas por 10 unidades</p>
+                                    </h2>
+                                    <div class="item-details"></div>
+                                    <h4 class="item-price">
+                                        <p class="Precio"><b>10000</b></p>
+                                    </h4>
+                                    <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                                </div>
+                            </li>
+
+                            <li class="post" data-category="Comida">
+                                <div class="item">
+                                    <img class="item-image" src="../statics/img/COMIDA2.png" alt=""
+                                        style="height: 200px; width: 240px;"><br>
+                                    <h2 class="item-title">
+                                        <p class="Subtitilo">Arepa campesina</p>
+                                    </h2>
+                                    <h2>
+                                        <p class="Descripcion">Paquete de arepas con relleno de queso por 10 unidades
+                                        </p>
+                                    </h2>
+                                    <div class="item-details">
+                                        <h4 class="item-price">
+                                            <p class="Precio"><b>15000</b></p>
+                                        </h4>
+                                        <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="post" data-category="Comida">
+                                <div class="item">
+                                    <img class="item-image" src="../statics/img/COMIDA3.jpg" alt=""
+                                        style="height: 200px; width: 240px;"><br>
+                                    <h2 class="item-title">
+                                        <p class="Subtitilo">Envuelto</p>
+                                    </h2>
+                                    <h2>
+                                        <p class="Descripcion">Paquete de envueltos con bocadillo por 6 unidades</p>
+                                    </h2>
+                                    <div class="item-details">
+                                        <h4 class="item-price">
+                                            <p class="Precio"><b>8000</b></p>
+                                        </h4>
+                                        <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="post" data-category="Comida">
+                                <div class="item">
+                                    <img class="item-image" src="../statics/img/COMIDA4.jpg" alt=""
+                                        style="height: 200px; width: 240px;"><br>
+                                    <h2 class="item-title">
+                                        <p class="Subtitilo">Tamal Campesino</p>
+                                    </h2>
+                                    <h2>
+                                        <p class="Descripcion">Delicioso tamal campesino</p>
+                                    </h2>
+                                    <div class="item-details">
+                                        <h4 class="item-price">
+                                            <p class="Precio"><b>5000</b></p>
+                                        </h4><br>
+                                        <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--Bebidas-->
+
+                            <li class="post" data-category="Bebidas">
+                                <div class="item">
+                                    <img class="item-image " src="../statics/img/BEBIDA1.gif" alt=""
+                                        style="height: 200px; width: 240px;"><br>
+                                    <h2 class="item-title">
+                                        <p class="Subtitilo">Masato</p>
+                                    </h2>
+                                    <h2>
+                                        <p class="Descripcion">Deliciosa Jarra de masato de maiz</p>
+                                    </h2>
+                                    <div class="item-details ">
+                                        <h4 class="item-price ">
+                                            <p class="Precio"><b>13000</b></p>
+                                        </h4>
+                                        <button class="item-button btn btn-primary addToCart ">AÑADIR AL
+                                            CARRITO</button>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="post" data-category="Bebidas">
+                                <div class="item">
+                                    <img class="item-image " src="../statics/img/BEBIDA2.jpg" alt=""
+                                        style="height: 200px; width: 240px;"><br>
+                                    <h2 class="item-title">
+                                        <p class="Subtitilo">Chicha</p>
+                                    </h2>
+                                    <h2>
+                                        <p class="Descripcion">Deliciosa Jarra de chicha de maiz</p>
+                                    </h2>
+                                    <div class="item-details ">
+                                        <h4 class="item-price ">
+                                            <p class="Precio"><b>14000</b></p>
+                                        </h4><br>
+                                        <button class="item-button btn btn-primary addToCart ">AÑADIR AL
+                                            CARRITO</button>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="post" data-category="Bebidas">
+                                <div class="item">
+                                    <img class="item-image " src="../statics/img/BEBIDA3.jpg" alt=""
+                                        style="height: 200px; width: 240px;"><br>
+                                    <h2 class="item-title">
+                                        <p class="Subtitilo">Canelazo</p>
+                                    </h2>
+                                    <h2>
+                                        <p class="Descripcion">Bebida caliente de aguardiente , canela y azúcar .</p>
+                                    </h2>
+                                    <div class="item-details ">
+                                        <h4 class="item-price ">
+                                            <p class="Precio"><b>5000</b></p>
+                                        </h4>
+                                        <button class="item-button btn btn-primary addToCart ">AÑADIR AL
+                                            CARRITO</button>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="post" data-category="Bebidas">
+                                <div class="item">
+                                    <img class="item-image " src="../statics/img/BEBIDA4.gif" alt=""
+                                        style="height: 200px; width: 240px;"><br>
+                                    <h2 class="item-title">
+                                        <p class="Subtitilo">Champús colombiano</p>
+                                    </h2>
+                                    <h2>
+                                        <p class="Descripcion">Miel de panela o chancaca, maíz, frutas locales y
+                                            especias</p>
+                                    </h2>
+                                    <div class="item-details ">
+                                        <h4 class="item-price ">
+                                            <p class="Precio"><b>6000</b></p>
+                                        </h4>
+                                        <button class="item-button btn btn-primary addToCart ">AÑADIR AL
+                                            CARRITO</button>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="post" data-category="Bebidas">
+                                <div class="item">
+                                    <img class="item-image " src="../statics/img/BEBIDA5.webp" alt=""
+                                        style="height: 200px; width: 240px;"><br>
+                                    <h2 class="item-title">
+                                        <p class="Subtitilo">Guarapo</p>
+                                    </h2>
+                                    <h2>
+                                        <p class="Descripcion"> bebida obtenida del jugo de la cañaduz fermentado</p>
+                                    </h2>
+                                    <div class="item-details ">
+                                        <h4 class="item-price ">
+                                            <p class="Precio"><b>3000</b></p>
+                                        </h4>
+                                        <button class="item-button btn btn-primary addToCart ">AÑADIR AL
+                                            CARRITO</button>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!--Postres-->
+
+                            <li class="post" data-category="Postres">
+                                <div class="item">
+                                    <img class="item-image" src="../statics/img/POSTRE1.webp" alt=""
+                                        style="height: 200px; width: 240px;"><br>
+                                    <h2 class="item-title">
+                                        <p class="Subtitilo">Postre de cuajada</p>
+                                    </h2>
+                                    <h2>
+                                        <p class="Descripcion">Postre de galleta, salsa de mora y cuajada</p>
+                                    </h2>
+                                    <div class="item-details">
+                                        <h4 class="item-price ">
+                                            <p class="Precio"><b>6000</b></p>
+                                        </h4>
+                                        <button class="item-button btn btn-primary addToCart ">AÑADIR AL
+                                            CARRITO</button>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="post" data-category="Postres">
+                                <div class="item">
+                                    <img class="item-image " src="../statics/img/POSTRE3.jpg" alt=""
+                                        style="height: 200px; width: 240px;"><br>
+                                    <h2 class="item-title">
+                                        <p class="Subtitilo">Cortado de Leche</p>
+                                    </h2>
+                                    <h2>
+                                        <p class="Descripcion">Dulce bañado con limon y hecho con leche de vaca </p>
+                                    </h2>
+                                    <div class="item-details">
+                                        <h4 class="item-price ">
+                                            <p class="Precio"><b>5000</b></p>
+                                        </h4>
+                                        <button class="item-button btn btn-primary addToCart ">AÑADIR AL
+                                            CARRITO</button>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="post" data-category="Postres">
+                                <div class="item">
+                                    <img class="item-image " src="../statics/img/MELCOCHA.jpg" alt=""
+                                        style="height: 200px; width: 240px;"><br>
+                                    <h2 class="item-title">
+                                        <p class="Subtitilo">Melcocha</p>
+                                    </h2>
+                                    <h2>
+                                        <p class="Descripcion">dulce popular de elaboración artesanal tipo confitura</p>
+                                    </h2>
+                                    <div class="item-details">
+                                        <h4 class="item-price ">
+                                            <p class="Precio"><b>4000</b></p>
+                                        </h4>
+                                        <button class="item-button btn btn-primary addToCart ">AÑADIR AL
+                                            CARRITO</button>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="post" data-category="Postres">
+                                <div class="item">
+                                    <img class="item-image " src="../statics/img/POSTRE2.jpg" alt=""
+                                        style="height: 200px; width: 240px;"><br>
+                                    <h2 class="item-title">
+                                        <p class="Subtitilo">Cocada</p>
+                                    </h2>
+                                    <h2>
+                                        <p class="Descripcion"> Se endulzan panela, pimienta guayabita o canela.</p>
+                                    </h2>
+                                    <div class="item-details">
+                                        <h4 class="item-price ">
+                                            <p class="Precio"><b>1500</b></p>
+                                        </h4>
+                                        <button class="item-button btn btn-primary addToCart ">AÑADIR AL
+                                            CARRITO</button>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!--Otros-->
+                            <li class="post" data-category="Otros">
+                                <div class="item">
+                                    <img class="item-image " src="../statics/img/MERMELADA.jpg" alt=""
+                                        style="height: 200px; width: 240px;"><br>
+                                    <h2 class="item-title">
+                                        <p class="Subtitilo">Mermelada Casera</p>
+                                    </h2>
+                                    <h2>
+                                        <p class="Descripcion">Mermelada casera de diferentes sabores en frasco</p>
+                                    </h2>
+                                    <div class="item-details ">
+                                        <h4 class="item-price ">
+                                            <p class="Precio"><b>10000</b></p>
+                                        </h4>
+                                        <button class="item-button btn btn-primary addToCart ">AÑADIR AL
+                                            CARRITO</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="post" data-category="Otros">
+                                <div class="item">
+                                    <img class="item-image " src="../statics/img/QUESO.jpg" alt=""
+                                        style="height: 200px; width: 240px;"><br>
+                                    <h2 class="item-title">
+                                        <p class="Subtitilo">Queso</p>
+                                    </h2>
+                                    <h2>
+                                        <p class="Descripcion">Queso delicioso libra a 6000 kilo a 12000</p>
+                                    </h2>
+                                    <div class="item-details">
+                                        <h4 class="item-price ">
+                                            <p class="Precio"><b>6000</b></p>
+                                        </h4>
+                                        <button class="item-button btn btn-primary addToCart ">AÑADIR AL
+                                            CARRITO</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="post" data-category="Otros">
+                                <div class="item">
+                                    <img class="item-image " src="../statics/img/CUAJADA.jpg" alt=""
+                                        style="height: 200px; width: 240px;"><br>
+                                    <h2 class="item-title">
+                                        <p class="Subtitilo">Cuajada</p>
+                                    </h2>
+                                    <h2>
+                                        <p class="Descripcion">Cuajada deliciosa libra a 7500 kilo a 15000</p>
+                                    </h2>
+                                    <div class="item-details">
+                                        <h4 class="item-price ">
+                                            <p class="Precio"><b>7500</b></p>
+                                        </h4>
+                                        <button class="item-button btn btn-primary addToCart ">AÑADIR AL
+                                            CARRITO</button>
+                                    </div>
+                                </div>
+                            </li>
+                    </div>
+                </section>
+            </div>
+
+            <!-- FIN SECCION TIENDA -->
+            <!-- INICIO SECCION CARRITO DE COMPRAS -->
+            <div class="row Blanco2" id="Blanco2">
+                <section class="shopping-cart col-md-12">
+                    <div class="container "><br><br>
+                        <h1 class="text-center">CARRITO</h1>
+                        <hr>
+                        <div class="row ">
+                            <div class="col-6 ">
+                                <div class="shopping-cart-header ">
+                                    <h6>Producto</h6>
+                                </div>
+                            </div>
+                            <div class="col-2 ">
+                                <div class="shopping-cart-header ">
+                                    <h6 class="text-truncate ">Precio</h6>
+                                </div>
+                            </div>
+                            <div class="col-4 ">
+                                <div class="shopping-cart-header ">
+                                    <h6>Cantidad</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- INICIO COMPRAS CARRITO ITEMS -->
+                        <div class="shopping-cart-items shoppingCartItemsContainer ">
+                        </div>
+                        <!-- FIN COMPRAS CARRIT ITEMS -->
+
+                        <!-- TOTAL -->
+                        <div class="row ">
+                            <div class="col-12 ">
+                                <div class="shopping-cart-total d-flex align-items-center ">
+                                    <p class="mb-0 ">Total</p>
+                                    <p class="ml-4 mb-0 shoppingCartTotal ">0</p>
+                                    <div class="toast ml-auto bg-info " role="alert " aria-live="assertive "
+                                        aria-atomic="true " data-delay="2000 ">
+                                        <div class="toast-header ">
+                                            <span>✅</span>
+                                            <strong class="mr-auto ml-1 text-secondary ">Elemento en el carrito</strong>
+                                            <button type="button " class="ml-2 mb-1 close " data-dismiss="toast "
+                                                aria-label="Close ">
+                                                <span aria-hidden="true ">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="toast-body text-white ">
+                                            Se aumentó correctamente la cantidad
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-success ml-auto comprarButton " type="button "
+                                        onclick="BotonComprar();">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </section>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container-fluid">
+                <div class="row Azulito">
+                    <div class="col-xs-12 col-sm-8">
+                        <br><b>2021</b> <br>Todos los derechos reservados para Campesino de corazon. &copy; <br>
+                        campes@decorazon.com
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <br> Calle 76 #58-25 <br>Bogotá D.C. - Colombia <br>Teléfono 57 (1) 400 65 74
+                        <br>
+                    </div>
+                    <br>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-12 Blanco">
+                        <center>
+                            <h5 class="designBy">
+                                CAMPESINOS DE CORAZON <3>
+                            </h5>
+                        </center>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+        <br><br>
+
+        <!-- SCRIPTS -->
+        <script src="../statics/js/cart.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+            crossorigin="anonymous "></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js "
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN "
+            crossorigin="anonymous "></script>
+
+    </body>
+
+</html>

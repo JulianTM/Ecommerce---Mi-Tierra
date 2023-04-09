@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+
+  background-image: url(../img/CAMPESINOS.jpg);
+  background-size: auto;
+  overflow: hidden;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+}
+
+#contenedor {
+  width: 90%;
+  max-width: 1200px;
+}
+
+
+.loader {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  overflow: hidden;
+}
+
+.loader:before {
+  position: absolute;
+  top: 50%;
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: 3px solid;
+  border-color: transparent transparent #005fad transparent;
+  border-radius: 100%;
+  animation: 1s spin ease infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  font-size: 55px;
+  color: #00b7af;
+  top: 130px;
+}
+
+.container>* {
+  margin: 5px;
+}
+
+.name {
+  display: flex;
+}
+
+.left,
+.right {
+  z-index: 10;
+  position: relative;
+  width: 32px;
+  height: 70px;
+  overflow: hidden;
+  color: #FFFFFF;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  transition: width 0.4s 0.1s;
+
+}
+
+.right:hover,
+.left:hover {
+  transition: width 0.4s 0.1s;
+}
+
+.left:hover {
+  width: 180px;
+}
+
+.right:hover {
+  width: 160px;
+}
+
+span {
+  position: absolute;
+}
+
+#name {
+  left: 30px;
+}
+
+.intro {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: #47D6D2;
+  width: 40%;
+  right: -1000px;
+  margin: 0;
+  height: 100vh;
+  color: #47D6D2;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper>* {
+  margin: 10px;
+}
+
+.close {
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 63%;
+  font-size: 24px;
+  transform: translateX(20px);
+  font-weight: 200;
+  letter-spacing: 1px;
+  top: cal(80vh -50%);
+}
+
+.text a {
+  position: relative;
+  color: #fbd1a2;
+  text-decoration: none;
+}
+
+.text>* {
+  margin: 10px 0;
+}
+
+.about-me {
+  text-align: center;
+  line-height: 45px;
+}
+
+#social {
+  font-size: 29px;
+}
+
+#social>* {
+  margin: 5px;
+}
+
+#work {
+  font-size: 20px;
+  margin: 40px 0;
+}
+
+#work>* {
+  margin: 5px;
+}
+
+.out {
+  transition: 1s all ease;
+  transform: translateX(450px);
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  animation: 0.5s bounce ease infinite;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(3px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 700px) {
+  .loader {
+    display: none;
+  }
+
+  .container {
+    width: auto;
+  }
+
+  .intro {
+    width: 100%;
+  }
+
+  .wrapper>* {
+    margin: 0;
+  }
+
+  .text {
+    width: 100%;
+    display: block;
+    text-align: center;
+    z-index: -1;
+    margin: 0;
+    transform: translateX(0);
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  .close {
+    width: 90%;
+  }
+}

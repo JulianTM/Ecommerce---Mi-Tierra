@@ -1,0 +1,51 @@
+.ValControl i {
+    visibility: hidden;
+    position: absolute;
+    top: 40%;
+    right: 10px;
+}
+
+.ValControl.success input {
+    border-color: springgreen;
+}
+
+.ValControl.error input {
+    border-color: red;
+}
+
+.ValControl.success textarea {
+    border-color: springgreen;
+}
+
+.ValControl.error textarea {
+    border-color: red;
+}
+
+.ValControl.success i.fa-check-circle {
+    color: lime;
+    visibility: visible;
+    position: relative;
+    margin: 1em;
+}
+
+.ValControl.error i.fa-exclamation-circle {
+    color: red;
+    visibility: visible;
+    position: relative;
+    margin-left: 1em;
+}
+
+.ValControl small {
+    color: red;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.ValControl.error small {
+    visibility: visible;
+}
+
+.text-muted {
+    color: #fff !important;
+}
