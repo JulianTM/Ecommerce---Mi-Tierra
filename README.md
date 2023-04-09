@@ -1,10 +1,11 @@
-# E-commerce / Mi Tierra
+# E-commerce / Mi Tierra 
 
 This is a very simple e-commerce website built with html, Css and JavaScript.
 
+
 ## Quick demo
 
----![pro](https://user-images.githubusercontent.com/105805993/230757430-74cc2fac-9b0e-458c-ae2a-c727d2bc35e0.gif)
+[![pro](https://user-images.githubusercontent.com/105805993/230757430-74cc2fac-9b0e-458c-ae2a-c727d2bc35e0.gif)]( https://mi-tierra.netlify.app/)
 
 ---
 
